@@ -1,0 +1,24 @@
+ALGORITHM produit_scalaire
+PROCEDURE dot_product(ps, v1, v2)
+VAR
+ps,j,i : INTEGER
+v1 : ARRAY_OF type[];
+v2 : ARRAY_OF type[];
+BEGIN
+ps:= 0
+    read (v1[i])
+     read (v2[j])
+     FOR i FROM 1 TO v1.lenght STEP 1 && FOR j FROM 1 TO v2.lenght STEP 1  DO
+    
+    ps= ps + v1*v2
+     END_FOR
+     Write("Le produit scalaire est :", ps)
+     
+   dot_product(ps, v1, v2)
+    
+     IF (ps==0) THEN
+        Write("Les vecteurs sont orthogonaux")
+     ELSE
+        Write("Les vecteurs ne sont pas orthogonaux")
+     END_IF
+END

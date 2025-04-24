@@ -1,4 +1,4 @@
-!ALGORITHME SOMME_ELEMENT_DIFFERENTS
+ALGORITHME SOMME_ELEMENT_DIFFERENTS
 VAR
   tab1 : ARRAY_OF type[]; 
   tab2 : ARRAY_OF type[];
@@ -21,13 +21,10 @@ FOR j FROM 1 TO tab2.lenght  STEP 1  DO
     read(tab2[j]) ;
 END_FOR
 IF (tab1[i]!= tab3[k]) THEN
-    tab3[k] = tab1[i]
+    tab3[k] = tab1[i]+1
 END_IF
 IF (tab3[K] != tab2[j]) THEN
-    tab3[K]= tab2[j]+1
-END_IF
-IF (tab3[K] != tab1[i]) THEN
-    tab3[K]= tab1[i]+1
+    tab3[K]+1= tab2[j]
 END_IF
 read(tab3(k))
 sum=sum+k
