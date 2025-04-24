@@ -1,0 +1,35 @@
+!ALGORITHME SOMME_ELEMENT_DIFFERENTS
+VAR
+  tab1 : ARRAY_OF type[]; 
+  tab2 : ARRAY_OF type[];
+  tab3 : ARRAY_OF type[];
+  k,i,j,sum : INTEGER ;
+BEGIN
+sum:= 0
+tab3[]
+    Write("Donnez les nombres du premier ensemble";);
+   read(tab1[i]) ;
+   Write("Donnez les nombres du deuxième ensemble" ;);
+   read(tab2[j]) ;
+
+FOR i FROM 1 TO tab1.lenght STEP 1  DO
+    read(tab1[i]) ;
+
+END_FOR
+
+FOR j FROM 1 TO tab2.lenght  STEP 1  DO
+    read(tab2[j]) ;
+END_FOR
+IF (tab1[i]!= tab3[k]) THEN
+    tab3[k] = tab1[i]
+END_IF
+IF (tab3[K] != tab2[j]) THEN
+    tab3[K]= tab2[j]+1
+END_IF
+IF (tab3[K] != tab1[i]) THEN
+    tab3[K]= tab1[i]+1
+END_IF
+read(tab3(k))
+sum=sum+k
+Write("La somme est :",K)
+END
